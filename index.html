@@ -16,9 +16,12 @@
       margin-bottom: 20px; /* Add some space below the text */
     }
     #unity-container {
-      width: 1080px;
-      height: 600px;
-      margin: 0 auto; /* Center align the Unity player */
+      position: absolute; /* Positioning relative to the viewport */
+      left: 50%; /* Center horizontally */
+      bottom: 20%; /* 20% from the bottom */
+      transform: translate(-50%, 0); /* Adjust horizontal centering */
+      width: 800px;
+      height: 500px;
     }
   </style>
 </head>
@@ -30,7 +33,7 @@
 <div class="content">
   <h1>Hussayn Nasir</h1>
   <h2>Software Engineer & Full-Stack Game Developer</h2>
-  <p>Welcome to my portfolio website. Here, you can find an of my work in game development called "PONG", showcasing my skills in full-stack development, UI/UX design, and real-time multiplayer gaming.</p>
+  <p>Welcome to my portfolio website. Here, you can find an example of my work in game development called "PONG", showcasing my skills in full-stack development, UI/UX design, and real-time multiplayer gaming.</p>
 </div>
 <!-- Unity WebGL Player for Pong Game -->
 <div id="unity-container" class="unity-desktop">
